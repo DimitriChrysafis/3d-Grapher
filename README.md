@@ -1,2 +1,4 @@
 # Graphing-stuff
-desmos from temu
+
+
+this is a work in progress okay 
