@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/dimitrichrysafis/CLionProjects/mvc/cmake-build-debug",
-		"source" : "/Users/dimitrichrysafis/CLionProjects/mvc"
+		"build" : "/Users/dimitrichrysafis/Documents/GitHub/3d-Grapher/cmake-build-debug",
+		"source" : "/Users/dimitrichrysafis/Documents/GitHub/3d-Grapher"
 	},
 	"version" : 
 	{
