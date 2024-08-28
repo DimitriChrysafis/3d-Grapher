@@ -1,5 +1,7 @@
 # Graphing-stuff
 
+THIS WAS WRITTEN IN VERY FEW TIME I KNOW IT IS BAD POORLY WIRTTEN CODE 
+
 
 this is a work in progress okay 
 <div style="display: flex; justify-content: center;">
