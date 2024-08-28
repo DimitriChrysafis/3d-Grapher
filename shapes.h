@@ -118,7 +118,6 @@ void drawCoordinateAxes(RenderWindow &window, const vector<Vector2f> &projectedA
             Vertex(Vector2f(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2), Color::Blue),
             Vertex(projectedAxes[2], Color::Blue)
     };
-
     window.draw(xAxis, 2, Lines);
     window.draw(yAxis, 2, Lines);
     window.draw(zAxis, 2, Lines);
