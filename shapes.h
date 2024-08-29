@@ -7,9 +7,11 @@
 #include <vector>
 #include <utility>
 #include <cmath>
+#include <iostream>
 
 using namespace sf;
 using namespace std;
+
 
 vector<Vec3> generateSpherePoints(float radius, int resolution) {
     vector<Vec3> points;
@@ -65,7 +67,6 @@ void createEllipse(vector<Vec3> &ellipsePoints, float a, float b, int resolution
         float theta = (float)i / (resolution - 1) * 2 * M_PI;
         float x = a * cos(theta);
         float y = b * sin(theta);
-        // Rotate around Z-axis if needed
         float xRot = x * cos(angle) - y * sin(angle);
         float yRot = x * sin(angle) + y * cos(angle);
         ellipsePoints.push_back(center + Vec3(xRot, yRot, 0));
