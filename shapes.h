@@ -45,7 +45,7 @@ vector<Vec3> generateSpherePoints(float radius, int resolution) {
 /***
  * VERTICES ARE CACULATED GIVEN THE CENTER AND SIZE (kinda cool innit)
  * size of the cube is just the lengths of the edges
- *
+ * origin can be computed given that just read the code
  */
 void createCube(vector<Vec3> &cubeVertices, vector<pair<int, int>> &cubeEdges, Vec3 center = Vec3(0, 0, 0)) {
     cubeVertices = {
@@ -67,6 +67,10 @@ void createCube(vector<Vec3> &cubeVertices, vector<pair<int, int>> &cubeEdges, V
 }
 
 
+/*
+ * pramid just read it it's a 3/4 base pyramid
+ * :3
+ */
 void createPyramid(vector<Vec3> &pyramidVertices, vector<pair<int, int>> &pyramidEdges, Vec3 center = Vec3(0, 0, 0)) {
     pyramidVertices = {
             center + Vec3(-PyramidSize, -PyramidSize, -PyramidSize),
@@ -80,6 +84,10 @@ void createPyramid(vector<Vec3> &pyramidVertices, vector<pair<int, int>> &pyrami
             {0, 3}, {1, 3}, {2, 3}
     };
 }
+
+/*
+ *
+ */
 
 void createEllipse(vector<Vec3> &ellipsePoints, float a, float b, int resolution, Vec3 center = Vec3(0, 0, 0), float angle = 0.0f) {
     ellipsePoints.clear();
