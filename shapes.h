@@ -19,10 +19,13 @@ using namespace std;
  * USES SPHERICAL COORDINATES:
  * Points are distributed across the surface based on the GIVEN resolution.
  * you need basic mvc
+ * i did the same thing in my model viewer repo where it's just spherical coordinates
+ * it is very cool
  *
  * @param radius The radius of the sphere
  * @param resolution the number of points to generate for each angle increment
  * @return a vector of vec3 points representing the sphere's surface
+ *
  */
 vector<Vec3> generateSpherePoints(float radius, int resolution) {
     vector<Vec3> points;
@@ -41,6 +44,8 @@ vector<Vec3> generateSpherePoints(float radius, int resolution) {
 
 /***
  * VERTICES ARE CACULATED GIVEN THE CENTER AND SIZE (kinda cool innit)
+ * size of the cube is just the lengths of the edges
+ *
  */
 void createCube(vector<Vec3> &cubeVertices, vector<pair<int, int>> &cubeEdges, Vec3 center = Vec3(0, 0, 0)) {
     cubeVertices = {
@@ -60,6 +65,7 @@ void createCube(vector<Vec3> &cubeVertices, vector<pair<int, int>> &cubeEdges, V
             {0, 4}, {1, 5}, {2, 6}, {3, 7}
     };
 }
+
 
 void createPyramid(vector<Vec3> &pyramidVertices, vector<pair<int, int>> &pyramidEdges, Vec3 center = Vec3(0, 0, 0)) {
     pyramidVertices = {
