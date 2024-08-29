@@ -13,6 +13,17 @@ using namespace sf;
 using namespace std;
 
 
+/**
+ * @brief Generates points on the surface of a sphere.
+ *
+ * USES SPHERICAL COORDINATES:
+ * Points are distributed across the surface based on the GIVEN resolution.
+ * you need basic mvc
+ *
+ * @param radius The radius of the sphere
+ * @param resolution the number of points to generate for each angle increment
+ * @return a vector of vec3 points representing the sphere's surface
+ */
 vector<Vec3> generateSpherePoints(float radius, int resolution) {
     vector<Vec3> points;
     for (int i = 0; i < resolution; ++i) {
@@ -28,6 +39,9 @@ vector<Vec3> generateSpherePoints(float radius, int resolution) {
     return points;
 }
 
+/***
+ * VERTICES ARE CACULATED GIVEN THE CENTER AND SIZE (kinda cool innit)
+ */
 void createCube(vector<Vec3> &cubeVertices, vector<pair<int, int>> &cubeEdges, Vec3 center = Vec3(0, 0, 0)) {
     cubeVertices = {
             center + Vec3(-CUBE_SIZE, -CUBE_SIZE, -CUBE_SIZE),
